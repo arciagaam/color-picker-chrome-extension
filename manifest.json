@@ -1,0 +1,11 @@
+{
+    "name": "Color Picker",
+    "version": "0.1",
+    "description" : "An extension to choose color anywhere on the webpage and generate shades from it.",
+    "manifest_version": 3,
+    "author": "Miguel Arciaga",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Color Picker"
+    }
+}

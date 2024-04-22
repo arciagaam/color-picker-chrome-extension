@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="lib/chroma.min.js"></script>
+    <!-- <script src="https://unpkg.com/values.js"></script> -->
+    <script src="lib/values.js"></script>
+    <script src="script.js" defer></script>
+    <title>Color Picker</title>
+    <style>
+        html {
+            border-radius: .25rem;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .shade-card-container { 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: .25rem;
+        }
+
+        .shade-card { 
+            height: auto;  
+            width: 100%;
+            aspect-ratio: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: column; width: fit-content; min-width: 350px; gap: 1.5rem; padding: .5rem;">    
+        <h1 style="white-space: nowrap;">Color Picker</h1>
+    
+        <div style="display: flex; flex-direction: column; gap: 0.125rem;">
+            <h2 style="white-space: nowrap;">Base Color</h2>
+            <div style="display: flex; flex-direction: row; gap:1rem;">
+                <div id="selected-color" style="min-height: 3rem; height: 3rem;  aspect-ratio: 1/1; background-color: brown;"></div>
+
+                <div style="display: flex; gap: .25rem;">
+                    <input id="hex" type="text">
+                    <button id="eyedropper">Eyedropper</button>
+                </div>
+            </div>
+        </div>
+    
+        <div style="display: flex; flex-direction: column; gap: 0.125rem;">
+            <h2 style="white-space: nowrap;">Shades</h2>
+            <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1rem;">
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+                <div class="shade-card-container">
+                    <div class="shade-card"></div>
+                    <p></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
